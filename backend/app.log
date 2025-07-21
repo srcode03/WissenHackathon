@@ -1,0 +1,23 @@
+2025-03-13 13:23:24,287 - server - INFO - Received video upload request from vinaykambar09@gmail.com for question 0
+2025-03-13 13:23:24,292 - server - INFO - Video saved: videos\vinaykambar09_at_gmail.com\video_vinaykambar09_at_gmail_dot_com_q0_20250313_132324.webm (2.67 MB)
+2025-03-14 22:20:17,289 - server - INFO - Received video upload request from vinaykambar09@gmail.com for question 0
+2025-03-14 22:20:44,976 - server - INFO - Received video upload request from vinaykambar09@gmail.com for question 0
+2025-03-14 22:21:19,518 - server - INFO - Received video upload request from vinaykambar09@gmail.com for question 0
+2025-03-14 22:21:54,619 - server - INFO - Received video upload request from vinaykambar09@gmail.com for question 0
+2025-03-14 22:29:37,177 - server - INFO - Received video upload request from vinaykambar09@gmail.com for question 0
+2025-03-14 22:31:20,868 - server - INFO - Received video upload request from vinaykambar09@gmail.com for question 0
+2025-03-14 22:31:21,983 - server - ERROR - Error in eye gaze analysis: 0.47457591974562596
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Desktop\AI-Based_Mock-Interview\backend\server.py", line 224, in analyze_eye_gaze
+    gaze_results = analyzer.analyze_video(video_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\AI-Based_Mock-Interview\backend\server.py", line 183, in analyze_video
+    processed_results = self._post_process_results(gaze_results)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\AI-Based_Mock-Interview\backend\server.py", line 206, in _post_process_results
+    counts[direction] += 1
+    ~~~~~~^^^^^^^^^^^
+KeyError: 0.47457591974562596
+2025-03-14 22:31:21,987 - server - INFO - Eye Gaze Analysis summary: {'error': 100}
+2025-03-14 22:33:06,183 - server - INFO - Received video upload request from vinaykambar09@gmail.com for question 0
+2025-03-14 22:33:07,456 - server - INFO - Eye Gaze Analysis summary: {'left': 0.0, 'center': 100.0, 'right': 0.0, 'unknown': 0.0}
